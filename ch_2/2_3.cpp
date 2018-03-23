@@ -59,7 +59,7 @@ void deleteMiddleNode (Node *node)
   Node * nextNode = node->next;
   node->data = nextNode->data;
   node->next = nextNode->next;
-  //delete nextNode;
+  delete nextNode;
 }
 
 int main()
