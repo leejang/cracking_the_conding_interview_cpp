@@ -10,7 +10,6 @@ bool checkPermutation(string str1, string str2)
 
   if (str1.length() != str2.length()) {
     return_val = false;
-    return return_val;
   } else {
     int char_cnt[256] = {0,};
     for (int i=0; i < str1.length(); i++)
@@ -34,7 +33,6 @@ bool checkPermutation(string str1, string str2)
         return false;
     }
   }
-
 
   return return_val;
 }

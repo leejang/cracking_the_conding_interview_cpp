@@ -16,7 +16,7 @@ bool isUniqueChars(const string &str){
 			if (char_set[val]){
 				return false;
 			}
-                        cout << "val: " << val << endl;
+                        cout << "str[i]: " << str[i] << " val: " << val << endl;
 			char_set[val] = true;
 		}
 		return true;
@@ -36,6 +36,7 @@ bool isUniqueChars_bitvector(const string &str) {
 	}
 	return true;
 }
+
 bool isUniqueChars_noDS( string str) {
 	
 	sort(str.begin(), str.end()); // O(nlogn) sort from <algorithm>
