@@ -123,8 +123,11 @@ int main()
   setZeros(test_matrix2, matrix_row, matrix_col);
   displayMatrix2(test_matrix2, matrix_row, matrix_col);
 
-  //delete[] test_matrix;
-  delete[] test_matrix2;
+  for (int i=0; i < matrix_row; i++)
+  {
+    delete[] test_matrix2[i];
+  }
+  delete [] test_matrix2;
 
   return 0;
 }
